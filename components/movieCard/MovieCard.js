@@ -16,7 +16,7 @@ function MovieCard({ movies }) {
     },
   })(Typography);
   return (
-    <Link href={`/movie/${movies.id}`}>
+    <Link href={`/movie/${movies.id}`} className={classes.linkTag}>
       <div className="card shadow mb-5 bg-body rounded">
         <div>
           <Image
