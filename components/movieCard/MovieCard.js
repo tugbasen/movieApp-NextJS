@@ -8,6 +8,7 @@ import {
   Box,
 } from "@material-ui/core";
 import { AiOutlinePercentage } from "react-icons/ai";
+import MovieScore from "./MovieScore";
 
 function MovieCard({ movies }) {
   const WhiteTextTypography = withStyles({
@@ -22,41 +23,11 @@ function MovieCard({ movies }) {
           <Image
             src={`https://image.tmdb.org/t/p/w500/${movies.poster_path}`}
             width={500}
-            height={700}
+            height={800}
             className="card-img-top"
           />
           <span>
-            <Box position="relative" display="inline-block" className={classes.score}>
-              <Box position="absolute">
-                <CircularProgress
-                  className={classes.firstCircule}
-                  size={50}
-                  variant="determinate"
-                  value={100}
-                />
-              </Box>
-              <CircularProgress
-                size={50}
-                className={classes.circule}
-                variant="determinate"
-                value={movies.vote_average * 10}
-              />
-              <Box
-                top={0}
-                left={0}
-                bottom={0}
-                right={0}
-                position="absolute"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-              >
-                <WhiteTextTypography style={{ fontSize: "13px" }} variant="h6">
-                  {`${movies.vote_average * 10}`}
-                  <AiOutlinePercentage style={{ paddingBottom: "5px" }} />
-                </WhiteTextTypography>
-              </Box>
-            </Box>
+            <MovieScore movies={movies} />
           </span>
         </div>
         <div className="card-body" style={{ paddingBottom: 10, paddingTop: 1 }}>

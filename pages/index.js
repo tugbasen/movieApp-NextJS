@@ -3,7 +3,7 @@ import MovieList from "../components/movieList/MovieList";
 import MovieFilters from "../components/movieFilters/MovieFilters";
 
 export default function HomePage({movies}) {
-    console.log(movies)
+   // console.log(movies)
   return (
     <div className="container">
       <div className="row">
