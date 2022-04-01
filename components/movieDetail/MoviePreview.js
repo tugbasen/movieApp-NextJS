@@ -11,7 +11,7 @@ import { BsFillPlayFill } from "react-icons/bs";
 import MovieDetailScore from "./MovieDetailScore";
 
 function MoviePreview({ movie }) {
-  console.log(movie);
+  // console.log(movie);
   return (
     <div className={classes.movieSummary}>
       <div className={classes.movieBackdrop}>

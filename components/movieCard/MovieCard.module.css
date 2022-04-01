@@ -1,4 +1,9 @@
 
 .linkTag{
-    cursor: pointer;
+    text-decoration: none;
+}
+
+.linkTag:hover{
+    text-decoration: none;
+    color: black;
 }
