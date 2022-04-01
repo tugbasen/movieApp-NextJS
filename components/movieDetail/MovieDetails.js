@@ -9,12 +9,14 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { BsLink } from "react-icons/bs";
 import MoviePreview from "./MoviePreview";
 
+import * as S from "../styles";
 import CastCard from "./CastCard";
 
 function MovieDetail({ movie, casts }) {
   // console.log(casts)
 
   return (
+    <S.MovieDetails>
     <div className="container">
         <MoviePreview movie={movie} />
         <div className="container">
@@ -116,6 +118,7 @@ function MovieDetail({ movie, casts }) {
           </Row>
         </div>
     </div>
+    </S.MovieDetails>
   );
 }
 

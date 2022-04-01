@@ -1,7 +1,9 @@
 import classes from "./MovieFilters.module.css";
+import * as S from "../styles";
 
 function MovieFilters() {
   return (
+    <S.MovieFilters>
     <div className={classes.movieFilters}>
       <div className="btn-group dropend border border-1 rounded mb-3 shadow-sm " style={{width :'100%', textAlign: "start"}}>
         <button type="button" className="btn btn-white">
@@ -46,6 +48,7 @@ function MovieFilters() {
           <b>Search</b>
       </button>
     </div>
+    </S.MovieFilters>
   );
 }
 

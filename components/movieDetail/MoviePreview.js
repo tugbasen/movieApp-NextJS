@@ -9,6 +9,7 @@ import { AiFillStar } from "react-icons/ai";
 import { BsFillPlayFill } from "react-icons/bs";
 
 import MovieDetailScore from "./MovieDetailScore";
+import * as S from "../styles";
 
 function MoviePreview({ movie }) {
   // console.log(movie);
@@ -72,6 +73,7 @@ function MoviePreview({ movie }) {
                     <MovieDetailScore movies={movie} />
                   </span>
                   <span style={{ position: "absolute", marginTop: 15 }}>
+                  <S.MoviePreview>
                       <span className={classes.userScore}>
                         User <br /> Score
                       </span>
@@ -91,6 +93,7 @@ function MoviePreview({ movie }) {
                         <BsFillPlayFill />
                       </span>
                       <span>Play Trailer</span>
+                      </S.MoviePreview>
                   </span>
                 </div>
                 <div className={classes.tagline}>

@@ -1,6 +1,7 @@
 import classes from "./Navbar.module.css";
 import Link from "next/link";
 import { FaSearch } from 'react-icons/fa';
+import * as S from "../styles";
 
 export default function Navbar() {
   return (
@@ -28,6 +29,7 @@ export default function Navbar() {
       </nav>
 
       <nav className={classes.settingsMenu}>
+      <S.NavBar>
           <ul className={classes.settingMenuItems}>
             <li>
                 <Link href="/" >
@@ -53,6 +55,7 @@ export default function Navbar() {
                 </Link>
             </li>
           </ul>
+          </S.NavBar>
       </nav>
     </header>
   );
